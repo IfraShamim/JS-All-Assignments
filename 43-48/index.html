@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43-48</title>
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!-- 1. Show an alert box on click on a link. -->
+    <h4>Program # 01</h4>
+    <a href="JavaScript:void(0)" onclick="alert(`You have Clicked on a link`);">Click Me</a>
+
+    <!-- 2. Display some Mobile images in browser. On click on an image Show the message in alert to user. -->
+    <h4>Program # 02</h4>
+
+    <img src="./images/1.jpeg" style="width: 150px;" onclick="alert(`Thanks for purchasing phone from us`);">
+    <img src="./images/2.jpg" style="width: 150px;" onclick="alert(`Thanks for purchasing phone from us`);">
+    <img src="./images/3.png" style="width: 150px;" onclick="alert(`Thanks for purchasing phone from us`);">
+
+    <!-- 3. Display 10 student records in table and each row should contain a delete 
+        button. If you click on a button to delete a record, entire row should be 
+        deleted. -->
+    <h4>Program # 03</h4>
+
+    <h2>Student Records</h2>
+
+    <table border="1px" width="100%" style="text-align: center">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Doe</td>
+                <td>9</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Mark</td>
+                <td>10</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>James</td>
+                <td>8</td>
+                <td><button onclick="deleteRow(this)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- <table border="1" width="100%" style="text-align: center;">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Button</th>
+        </tr>
+        <tr id="r1">
+            <td id="d1">0</td>
+            <td>A</td>
+            <td>10</td>
+            <td><input type="button" value="Delete" onclick="myDelete('r1','d1');"></td>
+        </tr>
+        <tr id="r2">
+            <td id="d2">1</td>
+            <td>b</td>
+            <td>9</td>
+            <td><input type="button" value="Delete" onclick="myDelete('r2','d2');"></td>
+        </tr>
+        <tr id="r3">
+            <td id="d3">2</td>
+            <td>C</td>
+            <td>10</td>
+            <td><input type="button" value="Delete" onclick="myDelete('r3','d3');"></td>
+        </tr>
+        <tr id="r4">
+            <td id="d4">3</td>
+            <td>D</td>
+            <td>8</td>
+            <td><input type="button" value="Delete" onclick="myDelete('r4','d4');"></td>
+        </tr>
+
+    </table> -->
+
+    <!-- 4. Display an image in browser. Change the picture on mouseover and set the
+    first picture on mouseout -->
+
+    <h4>Program # 04</h4>
+
+    <img src="./images/1.jpeg" onmouseover="src='./images/2.jpg'" onmouseout="src='./images/1.jpeg'" width="150px">
+
+    <!-- 5. Show a counter in browser. Counter should increase on click on increase 
+    button and decrease on click on decrease button. And show updated counter 
+    value in browser. -->
+
+    <h4>Program # 05</h4>
+
+    <input type="button" value="+" onclick="counter1();">
+    <input type="button" value="-" onclick="counter2();">
+    <p>I am Counter: <span id="count">0</span> </p>
+
+</body>
+
+</html>
